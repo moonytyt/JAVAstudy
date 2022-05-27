@@ -18,5 +18,12 @@ public class CompleteCalc extends Calculator{
 	public void showInfo(){
 		System.out.println("Calc 인터페이스를 구현하였습니다.");
 	}
+
+	// 디폴트 메서드는 재정의가 가능하다
+	@Override
+	public void description() {
+		System.out.println("완벽한 계산기 입니다");
+	}
+	
 	
 }
