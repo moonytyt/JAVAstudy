@@ -1,6 +1,7 @@
 package collection;
 
-public class Member {
+
+public class Member implements Comparable<Member>{
 
 	private int memberID;
 	private String memberName;
@@ -46,6 +47,13 @@ public class Member {
 	public int hashCode() {
 		return memberID;
 	}
+
+	@Override
+	public int compareTo(Member member) {
+		// 리턴을 양수로하면 오름차순
+		return (this.memberID - member.memberID);
+	}
+
 
 	
 	
